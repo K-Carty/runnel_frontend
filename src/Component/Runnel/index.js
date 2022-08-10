@@ -17,7 +17,7 @@ export default class Runnel extends Component {
 
   async loadRunnels()
   {
-    const promise = await axios.get("http://localhost:3001/");
+    const promise = await axios.get("http://localhost:3000/runnel");
     const status = promise.status;
     if(status===200)
     {
